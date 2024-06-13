@@ -12,9 +12,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n % 2 == 0)
-	printf("Es un numero par");
+	if (n == 0)
+	printf("is zero");
+	else if (n > 0)
+	printf("is positive");
 	else
-	printf("Es un numero impar");
+	printf("is negative");
 	return (0);
 }
