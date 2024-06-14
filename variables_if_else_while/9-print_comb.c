@@ -12,8 +12,11 @@ int main(void)
 	{
 		putchar((x % 10) + '0');
 
-		putchar(',');
-		putchar(' ');
+		if (x >= 0 && x < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar ('\n');
 	return (0);
