@@ -12,8 +12,8 @@ int main(void)
 	for (min = 'a'; min <= 'z'; min++)
 		putchar(min);
 
-	for (min = 'a'; min <= 'z'; min++)
-		putchar(toupper(min));
+	for (min = 'A'; min <= 'Z'; min++)
+		putchar(min);
 
 	putchar('\n');
 	return (0);
