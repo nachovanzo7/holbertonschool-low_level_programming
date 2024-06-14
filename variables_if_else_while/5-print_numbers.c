@@ -8,7 +8,7 @@
 int main(void)
 {
 	int num = 0;
-	while ((num % 10) == 0 || num == 0)
+	while (num % 10 == 0 || num == 0)
 	{
 		printf("%i", num);
 		num++;
