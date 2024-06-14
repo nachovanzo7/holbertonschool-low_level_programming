@@ -10,5 +10,6 @@ int main(void)
 	{
 		printf("%i", num);
 	}
+	printf("\n");
 	return (0);
 }
