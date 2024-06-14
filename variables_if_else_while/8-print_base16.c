@@ -1,23 +1,22 @@
 #include <stdio.h>
-/**
-*main - Retorna todos los numeros de base 16
-*Return: devuelve siempre valor 0
-*/
 
+/**
+ * main - Devolver todos los numeros de base 16
+ *
+ * Return: Siempre es 0
+ */
 int main(void)
 {
-	int x;
-	char y;
+	int num;
+	char letter;
 
-	for (x = 0; x <= 10; x++)
-	{
-		putchar(x % 10);
-	}
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	for (y = 'a'; y <= 'f'; y++)
-		putchar(y);
-
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
 
 	putchar('\n');
+
 	return (0);
 }
