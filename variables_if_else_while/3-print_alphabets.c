@@ -14,4 +14,7 @@ int main(void)
 
 	for (min = 'a'; min <= 'z'; min++)
 		putchar(toupper(min));
+
+	putchar('\n');
+	return (0);
 }
