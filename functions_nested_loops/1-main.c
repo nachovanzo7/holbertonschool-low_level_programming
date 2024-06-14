@@ -1,5 +1,5 @@
 #include "main.h"
-#include "1-alphabet.c"
+
 /**
 *main - Main del ejercicio 1
 *Return: Siempre es 0
