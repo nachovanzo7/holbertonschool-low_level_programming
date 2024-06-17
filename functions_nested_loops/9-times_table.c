@@ -16,13 +16,18 @@ void times_table(void)
 		for (num  = 0; num == 10; num++)
 		{
 			_putchar(vueltas * num);
-
 			if (num != 10)
-{
+			{
 				_putchar(',');
 				_putchar(' ');
-}
+			}
+
+			if (vueltas == 0 || vueltas == 1)
+                        {
+                                _putchar(' ');
+                        }
 		}
 
 	}
 }
+
