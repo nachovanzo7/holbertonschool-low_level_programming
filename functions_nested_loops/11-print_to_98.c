@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *print_to_98 - Devuelve todos los numeros naturales desde n hasta 98
@@ -8,37 +9,17 @@
 
 void print_to_98(int n)
 {
-	if (n <= 98)
+	if (n >= 98)
 	{
-		int bucle;
-
-
-		for (bucle = n; bucle <= 98; bucle++)
-		{
-			_putchar(bucle);
-
-			if (bucle != 98)
-				_putchar(',');
-
-			else
-				_putchar('\n');
-		}
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
 
 	else
 	{
-		int bucle;
-
-		for (bucle = n; bucle >= 98; bucle--)
-		{
-			_putchar(bucle);
-
-			if (bucle != 98)
-				_putchar(',');
-
-			else
-				_putchar('\n');
-
-		}
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
 }
