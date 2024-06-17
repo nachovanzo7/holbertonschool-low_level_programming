@@ -19,6 +19,9 @@ void print_to_98(int n)
 
 			if (bucle != 98)
 				_putchar(',');
+
+			else
+				_putchar('\n');
 		}
 	}
 
@@ -32,6 +35,10 @@ void print_to_98(int n)
 
 			if (bucle != 98)
 				_putchar(',');
+
+			else
+				_putchar('\n');
+
 		}
 	}
 }
