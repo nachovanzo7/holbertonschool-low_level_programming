@@ -10,38 +10,28 @@ void times_table(void)
 
 	int vueltas;
 	int num;
+	int res;
 
-	for (vueltas = 0; vueltas <= 10; vueltas++)
+	for (vueltas = 0; vueltas <= 9; vueltas++)
 	{
-		for (num  = 0; num == 10; num++)
+		_putchar('0');
+
+		for (num = 1; num <= 9; num++)
 		{
-			int res;
+			_putchar(',');
+			_putchar(' ');
 
 			res = vueltas * num;
 
-			if (num != 10)
-			{
-				_putchar(',');
+			if (res <= 9)
 				_putchar(' ');
-			}
-
-			if (num == 0)
-				_putchar(' ');
-
-			if (vueltas == 3 && num > 0 && num <= 2)
-				_putchar(' ');
-
-			if (vueltas == 4 && num > 0 && num <= 1)
-
-			if (num == 9)
-				_putchar('$');
-
-			if (vueltas == 0 || vueltas == 1)
-				_putchar(' ');
+			else
+				_putchar((res / 10) + '0');
 
 			_putchar((res % 10) + '0');
 
 		}
-
+		_putchar('\n');
 	}
+
 }
