@@ -22,6 +22,14 @@ void times_table(void)
 				_putchar(' ');
 			}
 
+			if (num == 0)
+				_putchar(' ');
+
+			if (vueltas == 3 && num > 0 && num <= 2)
+				_putchar(' ');
+
+			if (vueltas == 4 && num > 0 && num <= 1)
+
 			if (num == 10)
 				_putchar('$');
 
