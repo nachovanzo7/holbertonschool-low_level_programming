@@ -22,7 +22,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 
-			else
+			if (num == 10)
 				_putchar('$');
 
 			if (vueltas == 0 || vueltas == 1)
