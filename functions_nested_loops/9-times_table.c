@@ -30,7 +30,7 @@ void times_table(void)
 
 			if (vueltas == 4 && num > 0 && num <= 1)
 
-			if (num == 10)
+			if (num == 9)
 				_putchar('$');
 
 			if (vueltas == 0 || vueltas == 1)
