@@ -22,12 +22,13 @@ void times_table(void)
 				_putchar(' ');
 			}
 
+			else
+				_putchar('$');
+
 			if (vueltas == 0 || vueltas == 1)
-                        {
-                                _putchar(' ');
-                        }
+				_putchar(' ');
+
 		}
 
 	}
 }
-
