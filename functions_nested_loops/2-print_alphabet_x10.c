@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
 *print_alphabet_x10 - Va a imprimir el abecedario diez veces
 *Return: no devuelve nada
@@ -12,8 +12,8 @@ void print_alphabet_x10(void)
 		char letra;
 
 		for (letra = 'a'; letra <= 'z'; letra++)
-			putchar(letra);
+			_putchar(letra);
 
-		putchar('\n');
+		_putchar('\n');
 	}
 }
