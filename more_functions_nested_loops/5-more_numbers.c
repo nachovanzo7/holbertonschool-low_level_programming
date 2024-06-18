@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+*more_numbers - Devuelve lista de numeros
+*Return: no devuelve nada
+*/
+
 void more_numbers(void)
 {
 	int x;
@@ -14,7 +19,7 @@ void more_numbers(void)
 			unidad = y % 10;
 			decena = y / 10;
 
-			if (y == 9)
+			if (y > 9)
 			{
 				_putchar(decena + '0');
 			}
