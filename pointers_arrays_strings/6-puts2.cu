@@ -1,9 +1,9 @@
 #include "main.h"
 
 /*
-*puts2 - String linea por medio
-*Return: no devuelve nada
-*@str: string devuelto
+*puts2 - Devuelve el string linea por medio
+*Return: no devuelve ningun valor
+*@str: el string por parametro
 */
 
 void puts2(char *str)
