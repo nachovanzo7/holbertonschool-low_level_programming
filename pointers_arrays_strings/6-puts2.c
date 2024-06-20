@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 *puts2 - String linea por medio
 *Return: no devuelve nada
 *@str: string devuelto
