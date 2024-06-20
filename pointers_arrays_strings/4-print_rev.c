@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int y;
 
 	while (s[x] != '\0')
-		x++;
+		x++; /* obtener la ultima posicion del string */
 
 	for (y = (x - 1); y >= 0; y--)
 	{
