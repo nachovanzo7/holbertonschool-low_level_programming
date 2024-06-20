@@ -9,13 +9,13 @@
 int _strlen(char *s)
 {
 	int cant;
-	char x;
+	int x;
 
 	cant = 0;
 
 	for (x = *s; x == '\0'; x++)
 	{
-
+		x = *s++;
 		cant++;
 	}
 
