@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
-*
-*
-*
+*print_array - Imprime un array
+*Return: no retorna nada
+*@a: es el array
+*@n: es la cantidad de elementos en array
 */
 
 void print_array(int *a, int n)
