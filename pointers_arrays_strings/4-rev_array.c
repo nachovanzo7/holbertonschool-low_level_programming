@@ -12,8 +12,6 @@ void reverse_array(int *a, int n)
 	int y = 0;
 	int x;
 
-	if (n % 2)
-	{
 		for (x = n; x >= 0; x--)
 		{
 			if (x != y)
@@ -21,5 +19,4 @@ void reverse_array(int *a, int n)
 
 			y++;
 		}
-	}
 }
