@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_strcmp - Compara dos strings devolviendo la resta de sus incompatibilidades (ASCII)
+*_strcmp - Compara dos strings, resta de sus incompatibilidades (ASCII)
 *Return: retorna el resultado de la resta
 *@s1: primer string a comparar
 *@s2: segundo string a comparar
@@ -8,11 +8,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int len1 = 0;
-	int len2 = 0;
-	int x;
-	int y = 0;
-	int res = 0;
+	int len1 = 0, len2 = 0, x, y = 0, res = 0;
 
 	while (s1[len1])
 		len1++;
@@ -20,9 +16,7 @@ int _strcmp(char *s1, char *s2)
 	while (s2[len2])
 		len2++;
 
-
 /* Hasta donde se va a hacer la comparacion (string mas corto) */
-
 	if (len1 <= len2)
 		x = len1;
 
@@ -30,7 +24,6 @@ int _strcmp(char *s1, char *s2)
 		x = len2;
 
 /* Comparo uno a uno los caracteres del string */
-
 	while (y <= x)
 	{
 		if (s1[y] == s2[y])
@@ -44,7 +37,6 @@ int _strcmp(char *s1, char *s2)
 			res = s1[y] - s2[y]; /* Resto los valores ASCII de s1 y s2 */
 			break;
 		}
-
 		y++;
 	}
 
