@@ -22,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 
 /*  A partir del ultimo digito de dicho string se le concatena el otro */
 
-	for (x = 0; x < n; x++)
+	for (x = 0; x < n && src[x]; x++)
 	{
 		dest[len] = src[x];
 		len++;
