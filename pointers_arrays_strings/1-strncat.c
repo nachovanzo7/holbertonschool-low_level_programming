@@ -11,13 +11,15 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int len = 0;
+	int first = 0;
 	int x;
 
 /* Obtengo el largo del string al que se le va a concatenar otro */
 
-	while (dest[len] != '\0')
+	while (dest[len] != '\0' && src[first])
 	{
 		len++;
+		first++;
 	}
 
 /*  A partir del ultimo digito de dicho string se le concatena el otro */
