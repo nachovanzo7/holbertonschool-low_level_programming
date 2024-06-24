@@ -1,0 +1,8 @@
+#include "main.h"
+
+/**
+*reverse_array - Devuelve el array invertido de enteros
+*Return: no retorna nada
+*@a: array de enteros
+*@n: cantidad de esp
+*/
