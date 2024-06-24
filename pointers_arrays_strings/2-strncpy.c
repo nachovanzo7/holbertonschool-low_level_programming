@@ -14,7 +14,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 /*  A partir del string inicial le copio el otro string en el comienzo */
 
-	for (x = 0; x < n; x++)
+	for (x = 0; x < n && src[x]; x++)
 	{
 		dest[x] = src[x];
 	}
