@@ -10,12 +10,12 @@
 void reverse_array(int *a, int n)
 {
 	int y;
-	int x; /*Variable para bucle*/
+	int x;
 
-		for (x = n - 1; x >= n; x--)
-		{
-			y = a[n - 1 - x];
-			a[n - 1 - x] = a[x];
-			a[x] = y;
-		}
+	for (x = n - 1; x >= n / 2; x--)
+	{
+		y = a[(n - 1) - x];
+		a[(n - 1) - x] = a[x];
+		a[x] = y;
+	}
 }
