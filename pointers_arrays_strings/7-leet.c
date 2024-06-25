@@ -3,7 +3,7 @@
 /**
 *leet - Cambia letras por numeros (1337)
 *Return: retorna un string
-*@x: string ingresado
+*@string: string ingresado
 */
 
 char *leet(char *string)
