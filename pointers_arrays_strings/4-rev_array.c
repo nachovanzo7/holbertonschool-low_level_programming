@@ -9,17 +9,13 @@
 
 void reverse_array(int *a, int n)
 {
-	int y = 0;
-	int x;
-	int *repuesto;
+	int y;
+	int x; /*Variable para bucle*/
 
-	repuesto = a;
-
-		for (x = n; x >= 0; x--)
+		for (x = n - 1; x >= 0; x--)
 		{
-			if (x != y)
-				repuesto[y] = a[x];
-
-			y++;
+			y = a[(n - 1) - x];
+			a[(n - 1) - x] = a[x];
+			a[x] = y;
 		}
 }
