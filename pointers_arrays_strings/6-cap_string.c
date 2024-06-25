@@ -13,7 +13,12 @@ char *cap_string(char *x)
 	/*Recorro el string*/
 	while (x[i])
 	{
-		if (x[i] == ' ' && x[i] >= 'a' && x[i] <= 'z')
+		/*Si la primer letra del string es minuscula*/
+		if (x[0] >= 'a' && x[0] <= 'z')
+			x[0] -= 32;
+
+		/* Si hay un espacio en blanco y la siguiente letra es minuscula*/
+		if (x[i] == ' ' && x[i + 1] >= 'a' && x[i + 1] <= 'z')
 			x[i + 1] -= 32;
 
 		i++;
