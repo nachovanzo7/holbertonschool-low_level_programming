@@ -13,7 +13,7 @@ char *cap_string(char *x)
 	/*Recorro el string*/
 	while (x[i])
 	{
-		if (x[i] == ' ')
+		if (x[i] == ' ' && x[i] >= 'a' && x[i] <= 'z')
 			x[i + 1] -= 32;
 
 		i++;
