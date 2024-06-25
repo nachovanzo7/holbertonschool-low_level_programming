@@ -18,7 +18,7 @@ char *cap_string(char *x)
 			x[0] -= 32;
 
 		/* Si hay un espacio en blanco y la siguiente letra es minuscula*/
-		if ((x[i] == ' ' || x[i] == '\n' || x[i] == '\t') && x[i + 1] >= 'a' && x[i + 1] <= 'z')
+		if ((x[i] == ' ' || x[i] == '\n' || x[i] == '\t' || x[i] == '.') && x[i + 1] >= 'a' && x[i + 1] <= 'z')
 			x[i + 1] -= 32;
 
 		i++;
