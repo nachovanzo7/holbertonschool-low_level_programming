@@ -3,7 +3,7 @@
 /**
 *string_toupper - Cambia toda minuscula a mayuscula
 *Return: no retorna nada
-*@str: string de caracteres
+*@x: string de caracteres
 */
 
 char *string_toupper(char *x)
