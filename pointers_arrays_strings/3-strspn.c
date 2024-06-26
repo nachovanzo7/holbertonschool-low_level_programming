@@ -3,7 +3,7 @@
 /**
  *_strspn - Longitud de un substring de prefijo
  *Return: retorna la longitud del substring
- *@s: String 
+ *@s: String
  *@accept: Prefijo
  */
 unsigned int _strspn(char *s, char *accept)
