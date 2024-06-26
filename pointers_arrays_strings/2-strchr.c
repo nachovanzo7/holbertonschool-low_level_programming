@@ -7,7 +7,7 @@
  *@c: a partir de esta letra se imprimira el string
  */
 
- char *_strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int x;
 
