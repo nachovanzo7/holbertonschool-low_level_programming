@@ -15,6 +15,6 @@ void _print_rev_recursion(char *s)
 		_putchar(*s); /*Se va a ejecutar al llegar al ultimo caracter y 
 				comienza a imprimir del final al principio*/
 	}
-	
+
 	return;
 }
