@@ -1,15 +1,24 @@
-include "main.h"
+#include "main.h"
+
+int square(int n, int i);
 
 /**
- *_sqrt_recursion - Devuelve el numero base de una exponencial
- *Return: retorna el numero base
- *@n: el numero exponenciado
+ *_sqrt_recursion - Devuelve la raiz cuadrada de un numero
+ *Return: retorna el valor de la raiz cuadrada
+ *@n: el numero base
  */
 
 int _sqrt_recursion(int n)
 {
-	return (square(n + 1));
+	return (square(n, 1));
 }
+
+/**
+*square - hace los calculos necesarios para obtener la raiz de un numero
+*Return: retorna el resultado del calculo
+*@n: numero del que queremos obtener la raiz
+*@i: comienzo del calculo de raiz
+*/
 
 int square(int n, int i)
 {
@@ -21,6 +30,6 @@ int square(int n, int i)
 	if (x == n)
 		return (i);
 
-	return (_sqrt_recursion(n, i + 1);
+	return (square(n, i + 1));
 
 }
