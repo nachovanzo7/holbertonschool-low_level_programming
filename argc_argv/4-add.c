@@ -23,9 +23,11 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		for (y = 0; argv[x][y] != '\0'; y++) /* Recorre caracter por caracter cada string */
+		/* Recorre caracter por caracter cada string */
+		for (y = 0; argv[x][y] != '\0'; y++) 
 		{
-			if (!(isdigit(argv[x][y]))) /* Verifica si el argumento es valido como numero */
+			/* Verifica si el argumento es valido como numero */
+			if (!(isdigit(argv[x][y]))) 
 			{
 				printf("%s\n", "Error");
 
