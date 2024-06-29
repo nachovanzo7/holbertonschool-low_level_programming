@@ -10,5 +10,6 @@
 int main(int argc, char *argv[])
 {
 	printf("%d\n", argc - 1); /* El ultimo argumento es NULL */
+	(void)argv;
 	return (0);
 }
