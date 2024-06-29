@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		if (!(atoi(argv[x]))) /* Verifica si el argumento es valido como numero */
+		if (!atoi(argv[x])) /* Verifica si el argumento es valido como numero */
 		{
 			printf("%s\n", "Error");
 
