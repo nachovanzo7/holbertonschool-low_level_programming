@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argv[1] == NULL) /* Si no tiene 1 argumento no recibio nada */
 	{
+		printf("0\n");
 		return (0);
 	}
 
