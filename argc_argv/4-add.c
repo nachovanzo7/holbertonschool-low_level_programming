@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (x = 0; x < argc; x++)
+	for (x = 1; x < argc; x++)
 	{
 		if (!(atoi(argv[x]))) /* Verifica si el argumento es valido como numero */
 		{
