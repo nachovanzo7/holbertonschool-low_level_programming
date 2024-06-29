@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	int x = 0;
+	int x;
+	int suma = 0;
 
 	if (argv[1] == NULL) /* Si no tiene 1 argumento no recibio nada */
 	{
@@ -24,10 +25,10 @@ int main(int argc, char *argv[])
 			printf("%s\n", "Error");
 			return (0);
 		}
-		x += atoi(argv[x]); /* Cada vuelta suma el entero a la variable */
+		suma += atoi(argv[x]); /* Cada vuelta suma el entero a la variable */
 	}
 
-	printf("%d\n", x);
+	printf("%d\n", suma);
 
 	return (0);
 
