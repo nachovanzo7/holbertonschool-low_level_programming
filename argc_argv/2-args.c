@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int x;
 
-	for (x = 0; x < argc; x++)
+	for (x = 0; x < argc; x++) /* Recorrer hasta antes de la longitud del string (NULL) */
 	{
 		printf("%s\n", argv[x]);
 	}
