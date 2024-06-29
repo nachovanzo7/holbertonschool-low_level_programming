@@ -17,6 +17,9 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]); /* Convertir char a int con atoi */
 	x = atoi(argv[2]); 
 
+	if (argv[2] == NULL)
+		argv[2] = 0;
+
 	printf("%d\n", (i * x));
 	
 	(void)argc;
