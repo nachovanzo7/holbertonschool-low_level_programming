@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 		if (!(atoi(argv[x]))) /* Verifica si el argumento es valido como numero */
 		{
 			printf("%s\n", "Error");
-			return (0);
+
+			return (1);
 		}
 		suma += atoi(argv[x]); /* Cada vuelta suma el entero a la variable */
 	}
