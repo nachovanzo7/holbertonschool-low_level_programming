@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 	for (x = 1; x < argc; x++)
 	{
 		/* Recorre caracter por caracter cada string */
-		for (y = 0; argv[x][y] != '\0'; y++) 
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
 			/* Verifica si el argumento es valido como numero */
-			if (!(isdigit(argv[x][y]))) 
+			if (!(isdigit(argv[x][y])))
 			{
 				printf("%s\n", "Error");
 
