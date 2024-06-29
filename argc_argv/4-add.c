@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  *main - Imprimir la suma de dos numeros
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		if (!atoi(argv[x])) /* Verifica si el argumento es valido como numero */
+		if (!isdigit(argv[x])) /* Verifica si el argumento es valido como numero */
 		{
 			printf("%s\n", "Error");
 
