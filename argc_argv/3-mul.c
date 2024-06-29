@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int x;
-	
+
 	if (argv[2] != NULL)
 	{
 	/* Fuente: Biblioteca de Atoi - Universidad de Cordoba */
@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
 	if (argv[2] == NULL)
 	{
 		printf("%s\n", "Error");
-		
+
 		return (1);
 	}
 
 	printf("%d\n", (i * x));
-	
+
 	(void)argc;
 
 	return (0);
