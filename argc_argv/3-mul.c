@@ -13,10 +13,11 @@ int main(int argc, char *argv[])
 	int i;
 	int x;
 
-	i = atoi(argv[1]);
-	x = atoi(argv[2]);
+	/* Fuente: Biblioteca de Atoi - Universidad de Cordoba */
+	i = atoi(argv[1]); /* Convertir char a int con atoi */
+	x = atoi(argv[2]); 
 
-	printf("%d\n", (i + x));
+	printf("%d\n", (i * x));
 	
 	(void)argc;
 
