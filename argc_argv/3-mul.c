@@ -18,7 +18,11 @@ int main(int argc, char *argv[])
 	x = atoi(argv[2]); 
 
 	if (argv[2] == NULL)
-		argv[2] = 0;
+	{
+		printf("%s\n", "Error");
+		
+		return (1);
+	}
 
 	printf("%d\n", (i * x));
 	
