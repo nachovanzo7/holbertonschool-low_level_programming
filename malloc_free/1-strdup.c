@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	for (y = 0; str[y]; y++)
 		x++;
 
-	p = malloc(sizeof(char) + (x + 1));
+	p = malloc(sizeof(char) * (x + 1));
 
 	for (y = 0; y < x; y++)
 	{
