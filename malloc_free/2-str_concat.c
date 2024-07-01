@@ -15,8 +15,11 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int y = 0;
 
-	if (s1 == NULL || s2 == NULL) /*El string ingresado no es nulo */
-		return (NULL);
+	if (s1 == NULL) /*El string ingresado no es nulo */
+		s1 = " ";
+
+	if (s2 == NULL)
+		s2 = " ";
 
 	for (x = 0; s1[x]; x++)
 	      len++;
