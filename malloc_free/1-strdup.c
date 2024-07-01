@@ -3,8 +3,8 @@
 
 /**
  *_strdup - Devolver puntero a un espacio de memoria recien asignado
- *Return: retorna puntero a el nuevo string 
- *@str: string 
+ *Return: retorna puntero a el nuevo string
+ *@str: string
  */
 
 char *_strdup(char *str)
@@ -13,18 +13,18 @@ char *_strdup(char *str)
 	int x = 0;
 	int y;
 
-	if (str == NULL)
-                return (NULL);
+	if (str == NULL) /*El string ingresado no es nulo */
+		return (NULL);
 
-	for (y = 0; str[y]; y++)
+	for (y = 0; str[y]; y++) /* Calculo longitud de string */
 		x++;
 
-	p = malloc(sizeof(char) * (x + 1));
+	p = malloc(sizeof(char) * (x + 1)); /* Creo espacio en memoria */
 
-	if (p == NULL)
-                return (NULL);
+	if (p == NULL) /* Hay espacio disponible */
+		return (NULL);
 
-	for (y = 0; y < x; y++)
+	for (y = 0; y < x; y++) /* Copio string */
 	{
 		p[y] = str[y];
 	}
@@ -32,5 +32,4 @@ char *_strdup(char *str)
 	p[x] = '\0';
 
 	return (p);
-
 }
