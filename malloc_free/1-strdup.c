@@ -10,7 +10,6 @@
 char *_strdup(char *str)
 {
 	char *p;
-	char *pp;
 	int x = 0;
 	int y;
 
@@ -26,9 +25,7 @@ char *_strdup(char *str)
 	{
 		p[y] = str[y];
 	}
-	
-	pp = p;
 
-	return (pp);
+	return (p);
 
 }
