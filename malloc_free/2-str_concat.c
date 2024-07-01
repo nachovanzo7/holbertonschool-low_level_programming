@@ -16,10 +16,10 @@ char *str_concat(char *s1, char *s2)
 	int y = 0;
 
 	if (s1 == NULL) /*El string ingresado no es nulo */
-		s1 = " ";
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 
 	for (x = 0; s1[x]; x++)
 	      len++;
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	for (x = 0; s2[x]; x++)
 		len++;
 
-	p = malloc(sizeof(char) * (len - 1));
+	p = malloc(sizeof(char) * (len + 1));
 
 	if (p == NULL)
 		return (NULL);
