@@ -13,6 +13,9 @@ char *_strdup(char *str)
 	int x = 0;
 	int y;
 
+	if (str == NULL)
+                return (NULL);
+
 	for (y = 0; str[y]; y++)
 		x++;
 
