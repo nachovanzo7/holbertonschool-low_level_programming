@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[i] = s1[i];
 
-		if (i >= len && x < len2)
+		if (i >= len && x < (len2 - 1))
 		{
 			p[i] = s2[x];
 			x++;
