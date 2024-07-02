@@ -27,10 +27,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 
 	if (len2 > n)
-		sum = len + n;
+		sum = (len - 1) + n;
 
 	else
-		sum = len + len2;
+		sum = (len - 1) + len2;
 
 	p = malloc(sizeof(char) * sum);
 
