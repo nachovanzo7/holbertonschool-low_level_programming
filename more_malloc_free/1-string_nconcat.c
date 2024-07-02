@@ -27,22 +27,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 
 	if (len2 > n)
-		sum = (len) + n;
+		sum = (len - 1) + n;
 
 	else
-		sum = (len) + len2;
+		sum = (len - 1) + len2;
 
 	p = malloc(sizeof(char) * (sum));
 
 	if (p == NULL)
 		return (NULL);
 
-	for  (i = 0; i <= (sum - 1); i++)
+	for  (i = 0; i <= (sum); i++)
 	{
 		if (i < len)
 			p[i] = s1[i];
 
-		if (i >= len && x <= (len2 - 1))
+		if (i > len && x <= (len2 - 1))
 		{
 			p[i] = s2[x];
 			x++;
