@@ -29,9 +29,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (len2 > n)
 		sum = (len) + n;
 
-	else
-		sum = (len) + len2;
-
 	p = malloc(sizeof(char) * (sum + 1));
 
 	if (p == NULL)
@@ -47,11 +44,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			p[i] = s2[x];
 			x++;
 		}
-
 	}
 
 	p[sum] = '\0';
-
 	return (p);
 }
 
