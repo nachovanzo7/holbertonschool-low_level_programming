@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ *array_range - Crea espacio de memoria en base a un rango
+ *Return: el espacio de memoria con sus valores
+ *@min: minimo de elementos
+ *@max: maximo de elementos
  */
 
 int *array_range(int min, int max)
@@ -23,8 +23,8 @@ int *array_range(int min, int max)
 
 	for (i = 0; i < (max - min + 1) ; min++)
 	{
-		p[min] = min;
 		min++;
+		p[min] = min;
 	}
 
 	return (p);
