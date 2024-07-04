@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ *_calloc - Asigna espacio de memoria para cantidad de elementos determinado
+ *Return: retorna el puntero donde se aloja el espacio de memoria
+ *@nmemb: cantidad de elementos para asignar
+ *@size: peso de cada elemento en bytes
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p; /* Lo devuelto por la funcion */
