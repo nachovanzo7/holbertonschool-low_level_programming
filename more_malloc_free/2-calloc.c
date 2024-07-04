@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	pp = p;
 
-	for (x = 0; x < (nmemb * size);x++)
+	for (x = 0; x < ((nmemb * size) / 4); x++)
 	{
 		pp[x] = 0;
 	}
