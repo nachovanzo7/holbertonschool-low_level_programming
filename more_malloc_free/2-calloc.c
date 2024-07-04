@@ -3,7 +3,8 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *p;
+	void *p; /* Lo devuelto por la funcion */
+	int *pp; /* Puntero del puntero para guardar valores */
 	unsigned int x;
 
 	if (nmemb == 0 || size == 0)
@@ -14,10 +15,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 
+	pp = p;
 
 	for (x = 0; x < (nmemb * size);x++)
 	{
-		p[x] = 0;
+		pp[x] = 0;
 	}
 
 	return (p);
