@@ -18,8 +18,8 @@ struct dog
 	char *owner;
 };
 
-/* "typedef" - Indica la creacion de un alias 
- * Sintaxis: typedef estructura nuevonombre */
+ /* typedef - Indica la creacion de un alias */
+ /* Sintaxis: typedef estructura nuevonombre */
 
 /* Defino un tipo dog_t como "alias" de struct dog */
 typedef struct dog dog_t;
