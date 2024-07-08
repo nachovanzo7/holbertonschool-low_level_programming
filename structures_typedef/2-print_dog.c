@@ -18,10 +18,10 @@ void print_dog(struct dog *d)
 	owner = (*d).owner;
 
 	/* Imprimir nombre */
-	printf("Name: %s", name);
+	printf("Name: %s\n", name);
 	
 	/* Imprimir Edad */
-	printf("Age: %f", age);
+	printf("Age: %f\n", age);
 
 	/* Imprimir Owner */
 	printf("Owner: %s", owner);
