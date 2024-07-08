@@ -20,8 +20,8 @@ void print_dog(struct dog *d)
 	if (name != NULL)
 	/* Imprimir nombre */
 	printf("Name: %s\n", name);
-	
-	else 
+
+	else
 		printf("Name: %s\n", "(nil)");
 
 	/* Imprimir Edad */
