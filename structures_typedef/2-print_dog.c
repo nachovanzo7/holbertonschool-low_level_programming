@@ -24,5 +24,5 @@ void print_dog(struct dog *d)
 	printf("Age: %f\n", age);
 
 	/* Imprimir Owner */
-	printf("Owner: %s", owner);
+	printf("Owner: %s\n", owner);
 }
