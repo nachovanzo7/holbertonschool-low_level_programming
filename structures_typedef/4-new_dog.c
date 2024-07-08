@@ -7,6 +7,7 @@ char *_strcpy(char *dest, char *src);
 
 /**
  *new_dog - Crea una nueva entidad Perro
+ *Return: retorna la estructura de Perro
  *@name: nombre del perro
  *@age: edad del perro
  *@owner: propietario del perro
@@ -44,12 +45,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		(*p).owner = malloc(len2 + 1); /* Reservo memoria para el propietario */
 
-		 if ((*p).owner == NULL)
-                {
+		if ((*p).owner == NULL)
+		{
 			free((*p).name);
-                        free(p);
-                        return (NULL);
-                }
+			free(p);
+			return (NULL);
+		}
 
 		/* Asigno los valores por parametro */
 		(*p).name = _strcpy((*p).name, name);
