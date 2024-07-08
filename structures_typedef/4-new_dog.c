@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+char *_strcpy(char *dest, char *src);
+
 /**
  *new_dog - Crea una nueva entidad Perro
  *@name: nombre del perro
@@ -50,12 +52,33 @@ dog_t *new_dog(char *name, float age, char *owner)
                 }
 
 		/* Asigno los valores por parametro */
-		(*p).name = strcpy((*p).name, name);
+		(*p).name = _strcpy((*p).name, name);
 		(*p).age = age;
-		(*p).owner = strcpy((*p).owner, owner);
+		(*p).owner = _strcpy((*p).owner, owner);
 
 	}
 
 	return (p);
+}
+
+/**
+*_strcpy - Copiar un string limitado
+*Return: retorna el string copiado en el otro
+*@dest: el string modificado y devuelto
+*@src: string que se le copia
+*/
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	dest[i++] = '\0';
+
+	return (dest);
 }
 
