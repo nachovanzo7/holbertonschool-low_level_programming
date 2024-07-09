@@ -9,9 +9,12 @@
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
-{	
+{
 	int x;
 	int (*p)(int);
+
+	if (array == NULL)
+		return (-1);
 
 	if (size <= 0)
 		return (-1);
