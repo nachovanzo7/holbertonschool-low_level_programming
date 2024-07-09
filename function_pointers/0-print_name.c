@@ -15,7 +15,6 @@ void print_name(char *name, void (*f)(char *))
 	p = f;
 
 	(*p)(name);
-	p(name);
 
 	exit (EXIT_SUCCESS);
 }
