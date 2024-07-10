@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *print_strings - Imprimir un string 
+ *print_strings - Imprimir un string
  *Return: no retorna nada
  *@separator: separador de strings
  *@n: cantidad de string
@@ -28,11 +28,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (s != NULL)
 		{
 			if (x < ((int)n - 1))
-					printf("%s", s);
+				printf("%s", s);
 		}
 
 		if (str == NULL)
 			printf("%s", "(nil)");
 	}
-	printf("%c", '\n'); 
+	printf("%c", '\n');
 }
