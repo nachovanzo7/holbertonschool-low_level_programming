@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 
 	simbolo = *(argv[2]); /* ---> posicion 2 es el simbolo */
 
-	if (!atoi(argv[3]) && ((simbolo == '/' || simbolo == '%'))) /*No se puede dividir entre negativos*/
+	/*No se puede dividir entre negativos*/
+	if (!atoi(argv[3]) && ((simbolo == '/' || simbolo == '%')))
 	{
 		printf("%s\n", "Error");
 		return (100);
@@ -31,7 +32,8 @@ int main(int argc, char *argv[])
 
 	calculo = get_op_func(&simbolo);
 
-	if (calculo == NULL || argv[2][1] != '\0') /*Si el calculo es nulo o el simbolo contiene mas caracteres*/
+	/*Si el calculo es nulo o el simbolo contiene mas caracteres*/
+	if (calculo == NULL || argv[2][1] != '\0')
 	{
 		printf("%s\n", "Error");
 		return (99);
