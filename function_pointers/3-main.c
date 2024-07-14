@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	if (calculo == NULL || argv[2][1] != '\0') /*Si el calculo es nulo o el simbolo contiene mas caracteres*/
 	{
 		printf("%s\n", "Error");
-		return (3);
+		return (99);
 	}
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
