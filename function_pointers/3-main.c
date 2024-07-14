@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc != 4) /* Nom (0) - Num1 (1) Simbolo (2) Num2 (3) */
 	{
 		printf("%s\n", "Error");
-		return (1);
+		return (98);
 	}
 
 	simbolo = *(argv[2]); /* ---> posicion 2 es el simbolo */
