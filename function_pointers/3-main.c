@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	if (!atoi(argv[3]) && ((simbolo == '/' || simbolo == '%'))) /*No se puede dividir entre negativos*/
 	{
 		printf("%s\n", "Error");
-		return (2);
+		return (100);
 	}
 
 	calculo = get_op_func(&simbolo);
