@@ -1,5 +1,3 @@
-#include "3-calc.h"
-
 /**
 *int op_add(int a, int b)
 *Return: retorna el resultado de la suma (a + b)
