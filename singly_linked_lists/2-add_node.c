@@ -18,6 +18,9 @@ list_t *add_node(list_t **head, const char *str)
 
 	p = (list_t *)malloc(sizeof(list_t)); /* Asigno memoria para la estructura */
 
+	if (p == NULL)
+		return (NULL);
+
 	if (head == NULL)
 		return (NULL);
 
