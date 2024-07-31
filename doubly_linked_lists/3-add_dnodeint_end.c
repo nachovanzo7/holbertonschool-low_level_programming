@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+*add_dnodeint_end - Agrega un nuevo nodo al final de la lista
+*Return: retorna la lista
+*@head: puntero a la lista
+*@n: valor entero para agregar
+*/
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *lista, *aux;
@@ -25,7 +31,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	while (aux->next != NULL)
 		aux = aux->next;
-	
+
 	aux->next = lista;
 	lista->prev = aux;
 
