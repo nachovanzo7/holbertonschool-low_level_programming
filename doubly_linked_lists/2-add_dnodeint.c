@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/**
+ *add_dnodeint - Agregar un nuevo nodo al comienzo de la lista
+ *Return: retorna la direccion del nuevo elemento
+ *@head: puntero al nuevo nodo para agregar
+ *@n: valor entero
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *lista;
