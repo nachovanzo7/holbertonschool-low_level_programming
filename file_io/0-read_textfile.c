@@ -1,4 +1,5 @@
 #include <fcntl.h>
+#include <string.h>
 #include <stdio.h>
 #include <unistd.h>
 #include "main.h"
@@ -13,6 +14,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t op, wr, rd;
+	size_t len;
 	char *string;
 
 	if (filename == NULL)
@@ -38,7 +40,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(op);
 		return (0);
 	}
-	wr = write(STDOUT_FILENO, string, letters);
+
+	len = strlen(string);
+
+	if (len >= letters)
+		wr = write(STDOUT_FILENO, string, letters);
+	else
+		wr = write(STDOUT_FILENO, string, len);
 	if (wr < 0 || wr != rd)
 	{
 		free(string);
